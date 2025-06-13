@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunkara Purna Saivivek | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      color: #1e293b;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background-color: #1e293b;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #60a5fa;
+    }
+    header {
+      background: url('https://raw.githubusercontent.com/purna248/purna-portfolio/main/pexels-pixabay-270632.jpg') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 7rem 2rem 5rem;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+      z-index: 0;
+    }
+    header * {
+      position: relative;
+      z-index: 1;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #3b82f6;
+      margin-bottom: 1rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      font-size: 2.75rem;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.25rem;
+      color: #e2e8f0;
+    }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      border-left: 5px solid #3b82f6;
+      padding-left: 1rem;
+      color: #0f172a;
+    }
+    .skills, .experience, .projects {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+    }
+    .contact-info p {
+      margin: 0.5rem 0;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 3rem 2rem 2rem;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>SAIVIVEK</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <img src="https://raw.githubusercontent.com/purna248/purna-portfolio/main/purna.jpg" alt="Saivivek Profile Picture">
+    <h1>SUNKARA PURNA SAIVIVEK</h1>
+    <p>Web Development Intern | Responsive Design | Full Stack Enthusiast</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a web development intern with a strong foundation in responsive design and user-centric development. Leveraging skills in HTML, CSS, JavaScript, and SQL, I excel in collaborating within development teams to enhance user experience. My internships have equipped me with practical knowledge and certification in full stack development and backend integration, preparing me for future challenges in tech.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience">
+      <div class="card">
+        <h3>Web Development Intern – MotionCut</h3>
+        <p><strong>Feb 2025 – Apr 2025</strong></p>
+        <p>Contributed to web development projects, mentored by senior developers, and earned an AICTE-verified certificate.</p>
+      </div>
+      <div class="card">
+        <h3>Web Development Intern – ExcelR</h3>
+        <p><strong>Jun 2024 – Aug 2024</strong></p>
+        <p>Worked on responsive design, collaborated with teams, optimized for various platforms, and received a NASSCOM-ExcelR certification.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">HTML, CSS, JavaScript, Bootstrap</div>
+      <div class="card">SQL, Python, Java</div>
+      <div class="card">MS Office, Excel</div>
+      <div class="card">IoT, Front-End Development</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Daily Mood Tracker</h3>
+        <p>Designed a visually interactive webpage for users to track daily mood using icons and CSS styling. Focused on responsive layout and UX.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me through the following:</p>
+    <div class="contact-info">
+      <p>📧 Email: <a href="mailto:poornavivek45@gmail.com">poornavivek45@gmail.com</a></p>
+      <p>📞 Phone: +91 9182287945</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SUNKARA PURNA SAIVIVEK. All rights reserved.</p>
+  </footer>
+</body>
+</html>
